@@ -202,7 +202,7 @@ public class FileWindow extends JFrame implements ActionListener,Runnable {
 				run_prom = new Thread(this);
 			}
 			try {
-				run_prom = new Thread(this);
+				run_prom.start();
 			} catch (Exception e2) {
 				// TODO: handle exception
 				e2.printStackTrace();
